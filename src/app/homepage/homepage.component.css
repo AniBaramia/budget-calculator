@@ -1,0 +1,69 @@
+.header {
+  background-color: #b2c6eb;
+  width: 100vw;
+  text-align: center;
+  font-size: 25px;
+  padding: 16px;
+}
+
+.result {
+  background-color: #191f2d;
+  width: 100vw;
+  text-align: center;
+  font-size: 40px;
+  padding: 40px;
+  color: #46b694;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 32px 0px 80px;
+  cursor: pointer;
+}
+
+.amount {
+  width: 84px;
+  padding: 4px 12px;
+}
+
+.description {
+  width: 542px;
+}
+
+.addbtn {
+  width: 54px;
+  padding: 5px;
+  background-color: #cdb1fd;
+  border: none;
+  color: white;
+}
+
+.body {
+  margin: auto;
+  width: 720px;
+  display: flex;
+  gap: 80px;
+ 
+}
+
+.income {
+  flex: 1;
+}
+
+.ttl1 {
+  color: #46b694;
+  font-weight: bold;
+}
+
+.expenses {
+  flex: 1;
+}
+
+.ttl2 {
+  color: #bb5334;
+  font-weight: bold;
+}
+
+

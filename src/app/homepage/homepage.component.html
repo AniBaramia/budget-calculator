@@ -1,0 +1,41 @@
+<div class="header">
+  <div class="title">BUDGET CALCULATOR</div>
+</div>
+
+<div class="result">
+  <div class="outcome">{{ balance }}</div>
+</div>
+
+<form #formAddAmount="ngForm" class="add">
+  <input
+    class="amount"
+    name="amount"
+    type="number"
+    placeholder="Amount"
+    [(ngModel)]="amount"
+  />
+
+  <button
+    type="button"
+    class="addbtn"
+    (click)="addOnClick()"
+    [disabled]="amount == undefined"
+  >
+    + Add
+  </button>
+</form>
+
+<form #calculator="ngForm" class="body">
+  <div class="income">
+    <div class="ttl1">INCOME</div>
+    <div class="incomebody" *ngFor="let income of incomes">
+      <div class="incdes">{{ income }}</div>
+    </div>
+  </div>
+  <div class="expenses">
+    <div class="ttl2">EXPENSES</div>
+    <div class="expbody" *ngFor="let expense of expenses">
+      <div class="expdes">{{ expense }}</div>
+    </div>
+  </div>
+</form>
